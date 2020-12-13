@@ -4,8 +4,39 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Please Wait</title>
+
+		<link rel="stylesheet" type="text/css" href="styles/css/loading.css" />
+
+		<!-- #region Material UI -->
+		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+		<!-- #endregion -->
 	</head>
-	<body>
-		Loading
+	<body class="mdc-typography">
+		<section id="loading">
+			<h5 class="mdc-typography--headline5">Please wait...</h5>
+			<span class="mdc-typography--subtitle1">processing your location...</span>
+			<div
+				id="progressbar"
+				role="progressbar"
+				class="mdc-linear-progress mdc-linear-progress--indeterminate"
+				aria-label="Location processing progress"
+				aria-valuemin="0"
+				aria-valuemax="100"
+			>
+				<div class="mdc-linear-progress__buffer">
+					<div class="mdc-linear-progress__buffer-bar"></div>
+					<div class="mdc-linear-progress__buffer-dots"></div>
+				</div>
+				<div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+					<span class="mdc-linear-progress__bar-inner"></span>
+				</div>
+				<div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+					<span class="mdc-linear-progress__bar-inner"></span>
+				</div>
+			</div>
+		</section>
+		<script src="js/loading.js" type="module"></script>
 	</body>
 </html>

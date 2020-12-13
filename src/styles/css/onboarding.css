@@ -840,7 +840,14 @@ svg.mdc-button__icon {
           box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
 body {
+  height: 100%;
+  overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
