@@ -1,0 +1,41 @@
+@use "colors";
+@use "@material/theme" with (
+    $primary: colors.$orange
+);
+
+@use "@material/typography/mdc-typography";
+@use "@material/linear-progress";
+
+@include linear-progress.core-styles;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+
+    #loading {
+        text-align: center;
+
+        #progressbar {
+            width: calc(100% - 80px * 2);
+            margin-top: 16px;
+            margin-bottom: 50vh;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
