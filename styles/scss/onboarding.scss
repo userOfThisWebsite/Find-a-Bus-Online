@@ -1,0 +1,51 @@
+@use "colors";
+@use "@material/theme" with (
+    $primary: colors.$orange
+);
+
+@use '@material/button';
+@use "@material/typography/mdc-typography";
+
+@include button.core-styles;
+
+.custom-text-button,
+.custom-outlined-button {
+  @include button.ink-color(#84565E);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    #onboarding-image {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 64px;
+
+        img {
+            display: block;
+            width: 150vw;
+            position: relative;
+            left: -25vw;
+        }
+    }
+
+    #hook {
+        width: 100%;
+        text-align: center;
+
+        span {
+            color: rgba($color: #000000, $alpha: 0.7)
+        }
+    }
+
+    #button {
+        margin: 16px auto 0;
+    }
+}
