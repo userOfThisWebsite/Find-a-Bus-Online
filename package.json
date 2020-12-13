@@ -1,0 +1,28 @@
+{
+    "name": "find-a-bus-online",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/userOfThisWebsite/Find-a-Bus-Online.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/userOfThisWebsite/Find-a-Bus-Online/issues"
+    },
+    "homepage": "https://github.com/userOfThisWebsite/Find-a-Bus-Online#readme",
+    "dependencies": {
+        "@material/button": "^8.0.0",
+        "@material/linear-progress": "^8.0.0",
+        "@material/typography": "^8.0.0"
+    },
+    "devDependencies": {
+        "live-server": "^1.2.1"
+    }
+}

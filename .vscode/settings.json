@@ -1,0 +1,4 @@
+{
+    "dartsass.targetDirectory": "src/styles/css",
+    "dartsass.includePath": ["node_modules", "src/styles/scss"]
+}

@@ -1,0 +1,6 @@
+const liveServer = require("live-server")
+
+liveServer.start({
+    root: "./src",
+    ignore: "**/*.map",
+})

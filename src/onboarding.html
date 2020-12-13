@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Find A Bus Online!</title>
+
+		<link rel="stylesheet" type="text/css" href="styles/css/onboarding.css" />
+
+		<!-- #region Material UI -->
+		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+		<!-- #endregion -->
+	</head>
+	<body class="mdc-typography">
+		<section id="onboarding-image">
+			<img src="assets/onboarding-image.svg" alt="People at a bus stop." />
+		</section>
+		<section id="hook">
+			<h5 class="mdc-typography--headline5">Welcome to find-a-bus!</h5>
+			<span class="mdc-typography--subtitle1">Find the best bus route for you.</span>
+		</section>
+		<a id="button" href="loading.html" style="text-decoration: none">
+			<div class="mdc-touch-target-wrapper">
+				<button class="mdc-button mdc-button--outlined">
+					<div class="mdc-button__ripple"></div>
+					<span class="mdc-button__label">Let's Go!</span>
+				</button>
+			</div>
+		</a>
+		<script src="js/onboarding.js" type="module"></script>
+	</body>
+</html>
