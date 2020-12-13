@@ -1,0 +1,40 @@
+{
+    "name": "find-a-bus-online",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack serve"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/userOfThisWebsite/Find-a-Bus-Online.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/userOfThisWebsite/Find-a-Bus-Online/issues"
+    },
+    "homepage": "https://github.com/userOfThisWebsite/Find-a-Bus-Online#readme",
+    "dependencies": {
+        "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.10",
+        "@material/button": "^8.0.0",
+        "@material/ripple": "^8.0.0",
+        "babel-loader": "^8.2.2",
+        "css-loader": "^5.0.1",
+        "html-webpack-plugin": "^4.5.0",
+        "sass": "^1.30.0",
+        "sass-loader": "^10.1.0",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.10.1",
+        "webpack-dev-server": "^3.11.0"
+    },
+    "devDependencies": {
+        "@webpack-cli/serve": "^1.1.0",
+        "autoprefixer": "^10.1.0",
+        "postcss-loader": "^4.1.0",
+        "webpack-cli": "^4.2.0"
+    }
+}
